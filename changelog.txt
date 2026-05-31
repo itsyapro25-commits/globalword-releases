@@ -1,0 +1,8 @@
+v1.0 — Eerste release
+- Fase 1 kick + Fase 2 steady beweging
+- Profielen opslaan en laden
+- Aanpasbare hotkey (standaard Num Lock)
+- Automatische updates
+- Licentie systeem met key activatie
+- Minimaliseren naar system tray
+- Changelog venster
