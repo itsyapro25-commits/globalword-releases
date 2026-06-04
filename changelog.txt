@@ -1,8 +1,37 @@
-v1.0 — Eerste release
-- Fase 1 kick + Fase 2 steady beweging
-- Profielen opslaan en laden
-- Aanpasbare hotkey (standaard Num Lock)
-- Automatische updates
-- Licentie systeem met key activatie
-- Minimaliseren naar system tray
-- Changelog venster
+v3.1 — Feature Update
+- Humanize toggle — adds subtle random variation to movement, less robotic
+- Smooth toggle — gradual ease-out on kick phase + smooth blend into steady phase
+- Startup bug fix — 20ms delay prevents first tick firing during button press propagation
+- Settings snapshot — all values captured at loop start, mid-session slider changes no longer affect active movement
+- Changelog scroll fix — mouse wheel now works inside changelog window
+
+v3.0 — Feature Update
+- Active profile display — current profile shown prominently at the top of the UI
+- Multiple themes — Midnight Blue, Carbon Black, Emerald, Crimson
+- Extended hotkey binding — bind toggle to ANY key or mouse button including Mouse4, Mouse5, scroll wheel
+- Duplicate profile — copy any profile instantly with the DUP button
+- Profile sharing — export/import profiles via shareable code or .gwp file
+
+v2.0 — Major Update
+- Complete UI redesign — professional dark theme with colored accents and accent bar
+- Mouse sensitivity scaling — all profiles auto-adjust proportionally when sensitivity changes
+- Monthly license check — app works fully offline, only checks server every 30 days
+- Weapon presets — one-click presets: AK-47, M4A1, RPK, MP5, SCAR, LMG, SMG, Custom
+- Per-profile colors — choose a color for each profile, shown as colored strip and bullet
+- Update profile — overwrite an existing profile with current slider values, keeps color
+- Scrollable UI — scroll through all profiles with mouse wheel
+- Sub-pixel accumulator — fractional pixel movement is never lost at low values
+- Precise 60Hz timing — perf_counter based loop, consistent every session
+- Atomic file save — data.json written via temp file, crash-safe
+- Thread-safe UI — all Tkinter updates routed through main thread
+- Windows 1ms timer resolution — accurate sleep timing set at startup
+- Made by Meridian
+
+v1.0 — First Release
+- Phase 1 kick + Phase 2 steady downward movement
+- Save and load profiles with custom names
+- Customizable toggle hotkey (default: Num Lock)
+- License system with key activation — one key per machine
+- Minimize to system tray — app keeps running in background
+- Changelog window
+- Full English interface
