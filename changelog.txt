@@ -1,69 +1,59 @@
+v5.1 — Code Optimization
+- Removed dead methods that were defined but never called
+- Removed unused PILDraw import
+- Removed leftover make_rounded_image function from previous version
+- Replaced bare except clauses with proper except Exception handlers
+- Cleaned up excessive blank lines throughout codebase
+- All functionality preserved
+
 v5.0 — Premium UI Redesign
 - Complete GUI overhaul — sidebar navigation, compact 650x520 window
 - Left sidebar with tab navigation: Profiles, Presets, Crosshair, Settings
-- Purple accent theme with modern gaming aesthetic inspired by SteelSeries GG / Discord
-- Active profile card at top of Profiles tab with color accent
-- Profile dropdown selector with Add, Duplicate and Delete buttons
+- Purple accent theme with modern gaming aesthetic
+- Active profile status bar at top of Profiles tab
+- Scrollable collapsible profile list — click to expand/collapse each profile
+- Profile actions per row: Load, Save ↑, Dup, Delete
 - Bottom action bar with Save Changes and Reset to Default
 - Enable/Disable pill toggle in header
-- Accent color switcher in Settings — 6 colors to choose from
+- Accent color switcher in Settings — 6 colors
 - Meridian branding in sidebar and Settings About section
 - Changelog viewer in Settings tab
 
 v4.2 — Crosshair Designer
 - Full CrosshairX-style crosshair designer with live preview
-- Adjust length, thickness, gap, dot size with real-time canvas preview
-- Center dot, outline, T-shape toggles
+- Adjust length, thickness, gap, dot size in real time
+- Center dot, outline, T-shape, Dot Only toggles
+- Sliders now go down to 0 for full control
 - 12 color presets + outline color picker
-- Custom crosshair renders directly as overlay — no image files needed
-- Switch between preset crosshairs and custom designer crosshair
+- Custom crosshair renders directly as overlay
 
 v4.1 — Crosshair Overlay
 - 4 built-in crosshairs: Teal Dot, Red Dot, Red Cross, Purple Dot
-- Transparent click-through overlay displayed at screen center
-- Customize size (16–80px), opacity, and color override
-- Settings saved and restored on next launch
+- Transparent click-through overlay at screen center
+- Customize size, opacity, color override
+- Toggle on/off from Crosshair tab
 
 v4.0 — UI Overhaul
-- Complete GUI rebuild with card-based layout
+- Rebuilt GUI with card-based layout
 - All profile buttons clearly visible: Load, Update, Dup, Share, Delete
-- Delete button highlighted in red for clarity
-- Improved spacing and typography throughout
 
 v3.1 — Toggles & Bug Fixes
-- Humanize toggle — adds subtle random variation to movement, less robotic
-- Smooth toggle — gradual ease-out on kick + smooth blend into steady phase
-- Startup bug fix — 20ms delay prevents first tick firing during button press
-- Settings snapshot — slider changes mid-session no longer affect active movement
-- Changelog scroll fix — mouse wheel works inside changelog window
+- Humanize toggle — subtle random variation
+- Smooth toggle — gradual phase transition
+- Startup timing fix — 20ms delay prevents early first tick
+- Settings snapshot — mid-session slider changes no longer affect active movement
 
 v3.0 — Feature Update
-- Active profile display at top of UI with color accent
-- Multiple themes — Midnight Blue, Carbon Black, Emerald, Crimson
-- Extended hotkey binding — any key or mouse button including Mouse4, Mouse5, scroll wheel
+- Extended hotkey binding — any key or mouse button including Mouse4/5/scroll
 - Duplicate profile button
-- Profile sharing — export/import via shareable code or .gwp file
+- Profile sharing via code or .gwp file
 
 v2.0 — Major Update
-- Complete dark UI redesign with accent bar
-- Mouse sensitivity scaling — all profiles scale proportionally
-- Monthly license check — offline-first, only checks server every 30 days
-- Weapon presets — AK-47, M4A1, RPK, MP5, SCAR, LMG, SMG, Custom
-- Per-profile colors with color strip in profile rows
-- Update profile — overwrite existing profile, keeps color
-- Scrollable UI with mouse wheel
-- Sub-pixel accumulator — no movement lost at low values
-- Precise 60Hz timing via perf_counter
-- Atomic file save — crash-safe via temp file
-- Thread-safe UI updates via after()
-- Windows 1ms timer resolution set at startup
+- Dark UI redesign, sensitivity scaling, monthly license check
+- Weapon presets, per-profile colors, atomic file save
+- Sub-pixel accumulator, precise 60Hz timing
 - Made by Meridian
 
 v1.0 — First Release
-- Phase 1 kick + Phase 2 steady downward movement
-- Save and load profiles with custom names
-- Customizable toggle hotkey (default: Num Lock)
-- License system with key activation — one key per machine
-- Minimize to system tray
-- Changelog window
-- Full English interface
+- Phase 1 kick + Phase 2 steady movement
+- Profiles, hotkey, license system, system tray
