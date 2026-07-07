@@ -1,3 +1,12 @@
+v6.0 — License & Security Overhaul
+- Upgraded license validation to check on every application boot for maximum security
+- Replaced Discord Username with Meridian Username for cleaner integration
+- Admin panel overhauled with Generate, Unused Keys, and Activated tabs
+- Implemented temporary license durations (1 Month, 6 Months, 1 Year, Lifetime)
+- Added dynamic grouping of unused keys by duration type in admin panel
+- Fixed UI icon encoding issues (restored icons)
+- Cleaned up compiler process for stability
+
 v5.1 — Code Optimization
 - Removed dead methods that were defined but never called
 - Removed unused PILDraw import
@@ -57,3 +66,4 @@ v2.0 — Major Update
 v1.0 — First Release
 - Phase 1 kick + Phase 2 steady movement
 - Profiles, hotkey, license system, system tray
+
